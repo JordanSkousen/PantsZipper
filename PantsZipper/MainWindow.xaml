@@ -1,0 +1,17 @@
+﻿<Window x:Class="PantsZipper.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PantsZipper"
+        mc:Ignorable="d"
+        Title="PantsZipper" Height="94.387" Width="400" Background="#FF191919" Foreground="White" ResizeMode="NoResize" Topmost="True" WindowStartupLocation="CenterScreen" Loaded="Window_Loaded" Icon="Icon.ico">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Label x:Name="labelProgress" Content="Loading..." Foreground="White" VerticalAlignment="Bottom" Margin="10,0"/>
+        <ProgressBar x:Name="progressBar" Grid.Row="1" Margin="10,0,10,10" BorderBrush="{x:Null}"/>
+    </Grid>
+</Window>
